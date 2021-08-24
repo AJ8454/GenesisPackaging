@@ -35,15 +35,15 @@ class ProductItem extends StatelessWidget {
               child: Image.network(
                 product.imageUrl,
                 fit: BoxFit.fill,
-                width: 35.w,
-                height: 17.h,
+                width: 30.h,
+                height: 15.h,
               ),
             ),
             const SizedBox(height: 2),
             Text(
               product.title!,
               style: TextStyle(
-                fontSize: 12.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.bold,
               ),
             ),

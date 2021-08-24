@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
           title: 'Genesis Packaging',
           theme: ThemeData(
             primarySwatch: Colors.deepOrange,
-            fontFamily: GoogleFonts.roboto().fontFamily,
+            fontFamily: GoogleFonts.robotoSlab().fontFamily,
           ),
           initialRoute: '/',
           routes: {

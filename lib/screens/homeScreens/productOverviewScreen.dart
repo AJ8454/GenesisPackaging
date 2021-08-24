@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../../screens/homeScreens/home_screen.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:provider/provider.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
+import '../../widgets/nameTitle.dart';
+import '../../screens/homeScreens/home_screen.dart';
 import '../../providers/cartProvider.dart';
 import '../../widgets/user_attendance_widget.dart';
 import '../../widgets/badge.dart';
@@ -41,15 +41,7 @@ class _ProductOverviewScreenState extends State<ProductOverviewScreen> {
                     color: HexColor('#922A31'),
                   ),
                 ),
-                Text(
-                  'Genesis Packaging',
-                  style: TextStyle(
-                    fontFamily: GoogleFonts.ptSerif().fontFamily,
-                    color: HexColor('#922A31'),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                  ),
-                ),
+                const NameTitle(),
                 Consumer<CartProvider>(
                   builder: (_, cart, ch) => Badge(
                     child: ch!,
