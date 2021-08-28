@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.genesis_packaging">
    <application
-        android:label="genesis_packaging"
+        android:label="Genesis Packaging"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
