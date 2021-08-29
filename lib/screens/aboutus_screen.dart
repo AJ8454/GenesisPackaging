@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import '../widgets/contact_details.dart';
-import '../widgets/productAndservices.dart';
-import '../widgets/sellerProfile.dart';
+import '../widgets/about_widgets/contact_details.dart';
+import '../widgets/about_widgets/productAndservices.dart';
+import '../widgets/about_widgets/sellerProfile.dart';
 
 class AboutUs extends StatefulWidget {
   const AboutUs({Key? key}) : super(key: key);

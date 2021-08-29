@@ -6,7 +6,7 @@ import 'package:sizer/sizer.dart';
 import 'package:provider/provider.dart';
 import '../../models/attendance.dart';
 import '../../providers/employeeAttendance_Provider.dart';
-import '../../widgets/appbar_design.dart';
+import '../../widgets/header_widgets/appbar_design.dart';
 
 class AttendanceListScreen extends StatefulWidget {
   @override
@@ -14,7 +14,7 @@ class AttendanceListScreen extends StatefulWidget {
 }
 
 class _AttendanceListScreenState extends State<AttendanceListScreen> {
-  String? _message = 'Please Select the date to view record';
+  String? _message = 'Please select the date to view record';
   Future<void> _refreshAttendanceData(BuildContext context) async {
     try {
       await Provider.of<EmployeeAttendanceProvider>(context, listen: false)
@@ -41,46 +41,82 @@ class _AttendanceListScreenState extends State<AttendanceListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: HexColor('#F3F4F7'),
+      backgroundColor: Colors.white,
       appBar: PreferredSize(
-        child: Column(
-          children: [
-            AppBarDesign(
-              icon: Icons.arrow_back,
-              text: 'Attendance View',
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'Date :',
-                  style: TextStyle(fontSize: 15.sp, color: Colors.black),
-                ),
-                const SizedBox(width: 32),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    elevation: 8,
-                    padding: EdgeInsets.symmetric(horizontal: 24),
-                  ),
-                  child: Text(
-                    getText()!,
-                    style: TextStyle(
-                      fontSize: 15.sp,
-                    ),
-                  ),
-                  onPressed: () => pickDate(context),
-                )
-              ],
-            ),
-          ],
+        child: AppBarDesign(
+          icon: Icons.arrow_back,
+          text: 'Attendance View',
         ),
         preferredSize: Size.fromHeight(100),
       ),
-      body: Container(
-        child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: buildBuildDataTable(context),
-        ),
+      body: Column(
+        children: [
+          const SizedBox(height: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Date :',
+                style: TextStyle(fontSize: 12.sp, color: Colors.black),
+              ),
+              const SizedBox(width: 15),
+              Column(
+                children: [
+                  Text(
+                    'From',
+                    style: TextStyle(
+                      fontSize: 9.sp,
+                    ),
+                  ),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      elevation: 8,
+                      padding: EdgeInsets.symmetric(horizontal: 18),
+                    ),
+                    child: Text(
+                      getText()!,
+                      style: TextStyle(
+                        fontSize: 12.sp,
+                      ),
+                    ),
+                    onPressed: () => pickDate(context),
+                  ),
+                ],
+              ),
+              const SizedBox(width: 10),
+              Column(
+                children: [
+                  Text(
+                    'To',
+                    style: TextStyle(
+                      fontSize: 9.sp,
+                    ),
+                  ),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      elevation: 8,
+                      padding: EdgeInsets.symmetric(horizontal: 18),
+                    ),
+                    child: Text(
+                      getText()!,
+                      style: TextStyle(
+                        fontSize: 12.sp,
+                      ),
+                    ),
+                    onPressed: () => pickDate(context),
+                  ),
+                ],
+              )
+            ],
+          ),
+          const SizedBox(height: 10),
+          Container(
+            child: SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+              child: buildBuildDataTable(context),
+            ),
+          ),
+        ],
       ),
     );
   }

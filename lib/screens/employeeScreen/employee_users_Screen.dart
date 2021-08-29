@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:hexcolor/hexcolor.dart';
-import '../../widgets/appbar_design.dart';
+import '../../widgets/header_widgets/appbar_design.dart';
 import 'package:provider/provider.dart';
-import '../../widgets/user_employee.dart';
+import '../../widgets/employee_widgets/user_employee.dart';
 import '../../providers/employeeProvider.dart';
 import '../../utils/UserSimplePreferences.dart';
 

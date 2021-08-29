@@ -26,7 +26,7 @@ import 'screens/productScreen/edit_product_screen.dart';
 import 'screens/productScreen/produt_detail_screen.dart';
 import 'screens/productScreen/user_product_screen.dart';
 import 'utils/UserSimplePreferences.dart';
-import 'widgets/app_drawer.dart';
+import 'widgets/header_widgets/app_drawer.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

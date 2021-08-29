@@ -4,7 +4,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:provider/provider.dart';
 import '../providers/ordersProvider.dart';
-import '../widgets/appbar_design.dart';
+import '../widgets/header_widgets/appbar_design.dart';
 import '../widgets/order_item.dart';
 
 class OrdersScreen extends StatefulWidget {

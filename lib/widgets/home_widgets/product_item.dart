@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import '../models/product.dart';
+import '../../models/product.dart';
 import 'package:provider/provider.dart';
 
 class ProductItem extends StatelessWidget {
@@ -43,7 +43,7 @@ class ProductItem extends StatelessWidget {
             Text(
               product.title!,
               style: TextStyle(
-                fontSize: 14.sp,
+                fontSize: 16.sp,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -53,7 +53,7 @@ class ProductItem extends StatelessWidget {
               style: TextStyle(
                 color: Colors.black38,
                 fontWeight: FontWeight.bold,
-                fontSize: 10.sp,
+                fontSize: 12.sp,
               ),
             ),
           ],

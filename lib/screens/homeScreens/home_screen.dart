@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:genesis_packaging/widgets/error_controller.dart';
 import 'package:genesis_packaging/providers/productsProvider.dart';
 import 'package:provider/provider.dart';
-import '../../widgets/product_grid.dart';
+import '../../widgets/home_widgets/product_grid.dart';
 import '../../utils/UserSimplePreferences.dart';
 import '../../providers/email_sign_in_provider.dart';
 import '../../providers/google_sign_in_provider.dart';

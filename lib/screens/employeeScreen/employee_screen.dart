@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import '../../widgets/appbar_design.dart';
+import '../../widgets/header_widgets/appbar_design.dart';
 import 'package:sizer/sizer.dart';
 
 class EmployeeScreen extends StatelessWidget {

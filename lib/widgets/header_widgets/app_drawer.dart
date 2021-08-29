@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:provider/provider.dart';
-import '../providers/google_sign_in_provider.dart';
+import '../../providers/google_sign_in_provider.dart';
 
 class AppDrawer extends StatefulWidget {
   @override

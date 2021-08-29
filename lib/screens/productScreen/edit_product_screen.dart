@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import '../../providers/productsProvider.dart';
-import '../../widgets/appbar_design.dart';
+import '../../widgets/header_widgets/appbar_design.dart';
 import 'package:provider/provider.dart';
 import '../../models/product.dart';
 import 'package:intl/intl.dart';

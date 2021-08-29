@@ -3,7 +3,7 @@ import 'package:sizer/sizer.dart';
 import '../screens/aboutus_screen.dart';
 import '../widgets/auth_card.dart';
 import '../widgets/google_signup_widget.dart';
-import '../widgets/nameTitle.dart';
+import '../widgets/header_widgets/nameTitle.dart';
 
 class AuthScreen extends StatelessWidget {
   @override

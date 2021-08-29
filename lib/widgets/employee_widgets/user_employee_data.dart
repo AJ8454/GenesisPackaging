@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
-import '../../models/attendance.dart';
-import '../../providers/employeeAttendance_Provider.dart';
+import '../../../models/attendance.dart';
+import '../../../providers/employeeAttendance_Provider.dart';
 
 class UserEmployeeData extends StatefulWidget {
   final String? id;

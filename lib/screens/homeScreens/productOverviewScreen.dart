@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:provider/provider.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../../widgets/nameTitle.dart';
+import '../../widgets/header_widgets/nameTitle.dart';
 import '../../screens/homeScreens/home_screen.dart';
 import '../../providers/cartProvider.dart';
-import '../../widgets/user_attendance_widget.dart';
+import '../../widgets/home_widgets/user_attendance_widget.dart';
 import '../../widgets/badge.dart';
 import '../../screens/homeScreens/dashbord_screen.dart';
-import '../../widgets/app_drawer.dart';
+import '../../widgets/header_widgets/app_drawer.dart';
 
 class ProductOverviewScreen extends StatefulWidget {
   @override

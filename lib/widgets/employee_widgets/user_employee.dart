@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:provider/provider.dart';
-import '../../providers/employeeProvider.dart';
+import '../../../providers/employeeProvider.dart';
 
 class UserEmployee extends StatelessWidget {
   final String? id;

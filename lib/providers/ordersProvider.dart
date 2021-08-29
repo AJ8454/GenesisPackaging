@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:genesis_packaging/utils/UserSimplePreferences.dart';
+import '../utils/UserSimplePreferences.dart';
 import '../models/cart.dart';
 import '../models/orders.dart';
 import 'package:http/http.dart' as http;

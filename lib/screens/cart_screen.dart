@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:provider/provider.dart';
-import '../widgets/appbar_design.dart';
+import '../widgets/header_widgets/appbar_design.dart';
 import '../providers/ordersProvider.dart';
 import '../widgets/cart_item.dart';
 import '../providers/cartProvider.dart';

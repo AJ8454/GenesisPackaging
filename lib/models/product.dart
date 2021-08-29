@@ -11,7 +11,7 @@ class Product with ChangeNotifier {
   final String? dateTime;
   final double? rate;
   final String? gstNo;
-  String imageUrl;
+  final String imageUrl;
 
   Product({
     required this.id,

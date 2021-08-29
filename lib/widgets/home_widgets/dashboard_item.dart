@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import '../models/product.dart';
+import '../../models/product.dart';
 import 'package:provider/provider.dart';
 
 class DashboardItem extends StatelessWidget {

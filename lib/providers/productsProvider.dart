@@ -1,6 +1,5 @@
 import 'dart:convert';
-import 'package:genesis_packaging/models/product.dart';
-
+import '../models/product.dart';
 import '../models/http_exception.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';

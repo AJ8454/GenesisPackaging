@@ -7,12 +7,11 @@ class NameTitle extends StatelessWidget {
   const NameTitle({Key? key}) : super(key: key);
 
   @override
-  
   Widget build(BuildContext context) {
     return Text(
       "Genesis Packaging",
       style: TextStyle(
-        fontSize: 18.sp,
+        fontSize: 19.sp,
         fontFamily: GoogleFonts.playfairDisplay().fontFamily,
         fontWeight: FontWeight.bold,
         color: HexColor('#922A31'),

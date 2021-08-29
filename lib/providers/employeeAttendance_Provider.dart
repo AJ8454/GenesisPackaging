@@ -5,9 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 
 class EmployeeAttendanceProvider with ChangeNotifier {
-  // final String? authToken;
-  // final String? userId;
-
+ 
   DateTime? cDate = DateTime.now();
   String? setCurrentDate() {
     return DateFormat('dd-MM-yyyy').format(cDate!);
