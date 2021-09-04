@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hexcolor/hexcolor.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 import 'providers/cartProvider.dart';
@@ -60,13 +61,14 @@ class MyApp extends StatelessWidget {
           ),
           create: (ctx) => OrdersProvider('', []),
         ),
-      ],  
+      ],
       child: Sizer(builder: (context, orientation, deviceType) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Genesis Packaging',
           theme: ThemeData(
             primarySwatch: Colors.deepOrange,
+            accentColor: HexColor("#ff884b"),
             fontFamily: GoogleFonts.robotoSlab().fontFamily,
           ),
           initialRoute: '/',

@@ -60,53 +60,19 @@ class _AttendanceListScreenState extends State<AttendanceListScreen> {
                 style: TextStyle(fontSize: 12.sp, color: Colors.black),
               ),
               const SizedBox(width: 15),
-              Column(
-                children: [
-                  Text(
-                    'From',
-                    style: TextStyle(
-                      fontSize: 9.sp,
-                    ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  elevation: 8,
+                  padding: EdgeInsets.symmetric(horizontal: 18),
+                ),
+                child: Text(
+                  getText()!,
+                  style: TextStyle(
+                    fontSize: 12.sp,
                   ),
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      elevation: 8,
-                      padding: EdgeInsets.symmetric(horizontal: 18),
-                    ),
-                    child: Text(
-                      getText()!,
-                      style: TextStyle(
-                        fontSize: 12.sp,
-                      ),
-                    ),
-                    onPressed: () => pickDate(context),
-                  ),
-                ],
+                ),
+                onPressed: () => pickDate(context),
               ),
-              const SizedBox(width: 10),
-              Column(
-                children: [
-                  Text(
-                    'To',
-                    style: TextStyle(
-                      fontSize: 9.sp,
-                    ),
-                  ),
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      elevation: 8,
-                      padding: EdgeInsets.symmetric(horizontal: 18),
-                    ),
-                    child: Text(
-                      getText()!,
-                      style: TextStyle(
-                        fontSize: 12.sp,
-                      ),
-                    ),
-                    onPressed: () => pickDate(context),
-                  ),
-                ],
-              )
             ],
           ),
           const SizedBox(height: 10),
