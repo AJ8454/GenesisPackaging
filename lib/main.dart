@@ -34,17 +34,17 @@ void main() async {
   await Firebase.initializeApp();
   await EmployeeSalaryReportApi.init();
   await UserSimplePreferences.init();
-  SystemChrome.setPreferredOrientations([
+  SystemChrome.setPreferredOrientations([ 
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
-  ]);
+  ]); 
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
+    SystemChrome.setSystemUIOverlayStyle( 
         SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.transparent));
     return MultiProvider(
       providers: [
